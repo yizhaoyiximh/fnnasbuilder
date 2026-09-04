@@ -4,7 +4,6 @@
 
 使用本软件时，用户不需要单独安装 Linux 虚拟机、Homebrew、交叉编译工具链或一长串构建依赖；只需要准备基础 FnNAS 镜像，并在界面中选择目标设备和构建选项即可开始构建。
 
-> 当前项目准备发布到 GitHub：[`yizhaoyiximh/fnnasbuilder`](https://github.com/yizhaoyiximh/fnnasbuilder)
 
 ## 项目背景
 
