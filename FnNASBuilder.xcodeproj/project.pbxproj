@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A593D15978C6089B7DB477B /* BuildService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FB45D1FC0C1EE46ACB9B65 /* BuildService.swift */; };
+		0DCFD2F55361086B6FD4A793 /* FnNASBuilderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A08320D5BB8D8BAFBA4A57 /* FnNASBuilderApp.swift */; };
+		2FC6878928B2772769F91467 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A95BC40A975B2DE0D193B6B /* Assets.xcassets */; };
+		3361E6775913463AF3572055 /* fnnas-community.tar.gz in Resources */ = {isa = PBXBuildFile; fileRef = 0BE1C08D14B77FE7D771CFDE /* fnnas-community.tar.gz */; };
+		527B4046CB4016AFBB88C358 /* Scripts-build-dmg.sh in Resources */ = {isa = PBXBuildFile; fileRef = 737DF62BC48790E1E2481998 /* Scripts-build-dmg.sh */; };
+		6B1A383C58C58F7AE17D416F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE3D00AC884261B75C44C21 /* ContentView.swift */; };
+		85AE6E80DB05F76E11697B76 /* BuilderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200C7B72D717C79FBB42627 /* BuilderViewModel.swift */; };
+		86D9E9E05509DC8979042285 /* custom-kernel-build-info.txt in Resources */ = {isa = PBXBuildFile; fileRef = E72E03762F80E8A7436BB248 /* custom-kernel-build-info.txt */; };
+		9681EE4C10BF9D421DD49BF4 /* ContainerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47D7A6BD6256C6AA53BC2F3 /* ContainerService.swift */; };
+		98FA20728278EDB276DB1F72 /* fnnas-vmlinux-arm64.kernel in Resources */ = {isa = PBXBuildFile; fileRef = 2DD602796F045D55DB7B219D /* fnnas-vmlinux-arm64.kernel */; };
+		A97F45DDB0B7B145C634EC18 /* ProcessRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B0BFC981998D55BB93B6A2 /* ProcessRunner.swift */; };
+		B1F27DDC548CA696FD0EBFC5 /* apple-container-1.3.1-installer-signed.pkg in Resources */ = {isa = PBXBuildFile; fileRef = 036E0F6AD925B2625BE12382 /* apple-container-1.3.1-installer-signed.pkg */; };
+		BBAA22FA09DE09D5B9994762 /* apple-container-installer-manifest.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD7DDAE4E74ADC414C1442E5 /* apple-container-installer-manifest.txt */; };
+		C403FD8740FFE20A496B2297 /* model_database.conf in Resources */ = {isa = PBXBuildFile; fileRef = 4A81D3958ACA2F6B2743F4BD /* model_database.conf */; };
+		D7BDED51FDDA76B0951DF3DD /* BuildModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118CAC53F6C6876D88853881 /* BuildModels.swift */; };
+		F941F7FF1FA4D06FCA1F0F21 /* DeviceDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5A10B6F3CC5B16CABF2E9A /* DeviceDatabase.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		036E0F6AD925B2625BE12382 /* apple-container-1.3.1-installer-signed.pkg */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.installer-pkg"; path = "apple-container-1.3.1-installer-signed.pkg"; sourceTree = "<group>"; };
+		0BE1C08D14B77FE7D771CFDE /* fnnas-community.tar.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "fnnas-community.tar.gz"; sourceTree = "<group>"; };
+		118CAC53F6C6876D88853881 /* BuildModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildModels.swift; sourceTree = "<group>"; };
+		22A08320D5BB8D8BAFBA4A57 /* FnNASBuilderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FnNASBuilderApp.swift; sourceTree = "<group>"; };
+		2DD602796F045D55DB7B219D /* fnnas-vmlinux-arm64.kernel */ = {isa = PBXFileReference; path = "fnnas-vmlinux-arm64.kernel"; sourceTree = "<group>"; };
+		4A5A10B6F3CC5B16CABF2E9A /* DeviceDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDatabase.swift; sourceTree = "<group>"; };
+		4A81D3958ACA2F6B2743F4BD /* model_database.conf */ = {isa = PBXFileReference; path = model_database.conf; sourceTree = "<group>"; };
+		57FB45D1FC0C1EE46ACB9B65 /* BuildService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildService.swift; sourceTree = "<group>"; };
+		737DF62BC48790E1E2481998 /* Scripts-build-dmg.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "Scripts-build-dmg.sh"; sourceTree = "<group>"; };
+		7A95BC40A975B2DE0D193B6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8DE3D00AC884261B75C44C21 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A200C7B72D717C79FBB42627 /* BuilderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderViewModel.swift; sourceTree = "<group>"; };
+		AF442EFC6EBC66DC0FF9FFDC /* FnNASBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FnNASBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7B0BFC981998D55BB93B6A2 /* ProcessRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessRunner.swift; sourceTree = "<group>"; };
+		DD7DDAE4E74ADC414C1442E5 /* apple-container-installer-manifest.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "apple-container-installer-manifest.txt"; sourceTree = "<group>"; };
+		E47D7A6BD6256C6AA53BC2F3 /* ContainerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerService.swift; sourceTree = "<group>"; };
+		E72E03762F80E8A7436BB248 /* custom-kernel-build-info.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "custom-kernel-build-info.txt"; sourceTree = "<group>"; };
+		F73AA953B981F6B4AA2DF17C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		01CE21B567D4B3A5EC5E5FA9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				22A08320D5BB8D8BAFBA4A57 /* FnNASBuilderApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		25B3D060558EFFE5E94495E9 = {
+			isa = PBXGroup;
+			children = (
+				C321DD1A000F76D99D3BB577 /* FnNASBuilder */,
+				99F788EECF9ADC5AA985E3A0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		385951F4DF02D020BC2DDA16 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				036E0F6AD925B2625BE12382 /* apple-container-1.3.1-installer-signed.pkg */,
+				DD7DDAE4E74ADC414C1442E5 /* apple-container-installer-manifest.txt */,
+				E72E03762F80E8A7436BB248 /* custom-kernel-build-info.txt */,
+				0BE1C08D14B77FE7D771CFDE /* fnnas-community.tar.gz */,
+				2DD602796F045D55DB7B219D /* fnnas-vmlinux-arm64.kernel */,
+				4A81D3958ACA2F6B2743F4BD /* model_database.conf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		998D826E1770C1C56C8FBB4F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				118CAC53F6C6876D88853881 /* BuildModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		99F788EECF9ADC5AA985E3A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF442EFC6EBC66DC0FF9FFDC /* FnNASBuilder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B106903B65DF8433F1F2E99A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A200C7B72D717C79FBB42627 /* BuilderViewModel.swift */,
+				57FB45D1FC0C1EE46ACB9B65 /* BuildService.swift */,
+				E47D7A6BD6256C6AA53BC2F3 /* ContainerService.swift */,
+				4A5A10B6F3CC5B16CABF2E9A /* DeviceDatabase.swift */,
+				C7B0BFC981998D55BB93B6A2 /* ProcessRunner.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B76EBF1B5C98C97392963809 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8DE3D00AC884261B75C44C21 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C321DD1A000F76D99D3BB577 /* FnNASBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				7A95BC40A975B2DE0D193B6B /* Assets.xcassets */,
+				F73AA953B981F6B4AA2DF17C /* Info.plist */,
+				737DF62BC48790E1E2481998 /* Scripts-build-dmg.sh */,
+				01CE21B567D4B3A5EC5E5FA9 /* App */,
+				998D826E1770C1C56C8FBB4F /* Models */,
+				385951F4DF02D020BC2DDA16 /* Resources */,
+				B106903B65DF8433F1F2E99A /* Services */,
+				B76EBF1B5C98C97392963809 /* Views */,
+			);
+			path = FnNASBuilder;
+			sourceTree = "<group>";
+		};
+		"TEMP_FB378A07-DE88-45E2-A41A-8527BCE85D26" /* FnNASBuilder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FnNASBuilder;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD4CC1BCCDD5B6ED528830CF /* FnNASBuilder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4E5A8B1AA89D1705C505545 /* Build configuration list for PBXNativeTarget "FnNASBuilder" */;
+			buildPhases = (
+				DAF7CF4553F3B978AD61C8AF /* Sources */,
+				14BDF08EB7ED79CF62E1F5BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FnNASBuilder;
+			productName = FnNASBuilder;
+			productReference = AF442EFC6EBC66DC0FF9FFDC /* FnNASBuilder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F471A410A796E23895FAF9BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 02429DFECF814C9EE41C57DF /* Build configuration list for PBXProject "FnNASBuilder" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 25B3D060558EFFE5E94495E9;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD4CC1BCCDD5B6ED528830CF /* FnNASBuilder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14BDF08EB7ED79CF62E1F5BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FC6878928B2772769F91467 /* Assets.xcassets in Resources */,
+				527B4046CB4016AFBB88C358 /* Scripts-build-dmg.sh in Resources */,
+				B1F27DDC548CA696FD0EBFC5 /* apple-container-1.3.1-installer-signed.pkg in Resources */,
+				BBAA22FA09DE09D5B9994762 /* apple-container-installer-manifest.txt in Resources */,
+				86D9E9E05509DC8979042285 /* custom-kernel-build-info.txt in Resources */,
+				3361E6775913463AF3572055 /* fnnas-community.tar.gz in Resources */,
+				98FA20728278EDB276DB1F72 /* fnnas-vmlinux-arm64.kernel in Resources */,
+				C403FD8740FFE20A496B2297 /* model_database.conf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAF7CF4553F3B978AD61C8AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7BDED51FDDA76B0951DF3DD /* BuildModels.swift in Sources */,
+				0A593D15978C6089B7DB477B /* BuildService.swift in Sources */,
+				85AE6E80DB05F76E11697B76 /* BuilderViewModel.swift in Sources */,
+				9681EE4C10BF9D421DD49BF4 /* ContainerService.swift in Sources */,
+				6B1A383C58C58F7AE17D416F /* ContentView.swift in Sources */,
+				F941F7FF1FA4D06FCA1F0F21 /* DeviceDatabase.swift in Sources */,
+				0DCFD2F55361086B6FD4A793 /* FnNASBuilderApp.swift in Sources */,
+				A97F45DDB0B7B145C634EC18 /* ProcessRunner.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		115B57149CBC0B748CE721C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		17D3C71E441B7B954A3229B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FnNASBuilder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fnnas.builder;
+				PRODUCT_NAME = "FnNAS Builder";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		B881108880DE5516C6C1C665 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F98B756A9C7E8B74C10C10E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FnNASBuilder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fnnas.builder;
+				PRODUCT_NAME = "FnNAS Builder";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02429DFECF814C9EE41C57DF /* Build configuration list for PBXProject "FnNASBuilder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B881108880DE5516C6C1C665 /* Debug */,
+				115B57149CBC0B748CE721C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B4E5A8B1AA89D1705C505545 /* Build configuration list for PBXNativeTarget "FnNASBuilder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17D3C71E441B7B954A3229B2 /* Debug */,
+				F98B756A9C7E8B74C10C10E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F471A410A796E23895FAF9BD /* Project object */;
+}

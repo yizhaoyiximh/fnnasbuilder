@@ -1,0 +1,24 @@
+FnNAS Builder custom Apple Container kernel
+
+Architecture: arm64 (Apple Silicon), uncompressed Linux Image
+Base source: Linux 6.18.5
+Containerization recipe: Apple Containerization 0.43.0 (commit 2faaf9b4aff48a4745ef3d26c3f1450c1228fdf0), kernel/build.sh
+Built: 2026-09-01 UTC
+Output: arch/arm64/boot/Image
+SHA-256: 52d6f3f2ed361badc25f40a484b119d1927f9089f8af50e5b584560297bfc313
+Size: 30939648 bytes
+
+Built-in configuration additions for FnNAS image construction:
+  CONFIG_BTRFS_FS=y
+  CONFIG_FAT_FS=y
+  CONFIG_MSDOS_FS=y
+  CONFIG_VFAT_FS=y
+  CONFIG_BLK_DEV_LOOP=y
+  CONFIG_PARTITION_ADVANCED=y
+  CONFIG_MSDOS_PARTITION=y
+  CONFIG_EFI_PARTITION=y
+
+CONFIG_MSDOS_PARTITION=y enables the DOS/MBR partition parser. It is required for
+losetup -P to create /dev/loopNp1, /dev/loopNp2, etc. from FnNAS MBR disk images.
+
+The bundled fnnas-vmlinux-arm64.kernel is passed to `container create --kernel`.

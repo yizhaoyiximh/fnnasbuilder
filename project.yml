@@ -1,0 +1,29 @@
+name: FnNASBuilder
+options:
+  deploymentTarget:
+    macOS: '26.0'
+targets:
+  FnNASBuilder:
+    type: application
+    platform: macOS
+    deploymentTarget: '26.0'
+    sources:
+      - FnNASBuilder
+    resources:
+      - FnNASBuilder/Resources
+      # arm64 Linux Image 使用 .kernel 扩展名并显式列出，确保打包进 .app。
+      - FnNASBuilder/Resources/fnnas-vmlinux-arm64.kernel
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.fnnas.builder
+        PRODUCT_NAME: FnNAS Builder
+        SWIFT_VERSION: 5.9
+        MACOSX_DEPLOYMENT_TARGET: '26.0'
+        ARCHS: arm64
+        ONLY_ACTIVE_ARCH: YES
+        INFOPLIST_FILE: FnNASBuilder/Info.plist
+        # 本地构建使用 ad-hoc 签名，保证 .app 的完整性可被 codesign 验证。
+        # 正式分发仍需在发布机替换为 Developer ID Application 并完成公证。
+        CODE_SIGN_IDENTITY: '-'
+        CODE_SIGNING_REQUIRED: NO
+        CODE_SIGNING_ALLOWED: YES

@@ -1,0 +1,48 @@
+# macOS 系统文件
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Xcode 用户配置和本地状态
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+*.moved-aside
+*.pbxuser
+*.mode1v3
+*.mode2v3
+
+# Swift Package Manager / Xcode 本地构建缓存
+.build/
+DerivedData/
+Build/
+.swiftpm/
+
+# 本机 Release / 调试构建输出（项目根目录）
+/build-*/
+/dist-release/
+
+# App、DMG 等本机打包产物
+*.app
+*.dmg
+
+# 本地日志和临时文件
+*.log
+logs/
+/tmp/
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# 本地代码索引、开发工具缓存
+.codebase-memory/
+.codex/
+
+# 各类编辑器和操作系统临时文件
+.idea/
+.vscode/
+*.bak
+*.orig
