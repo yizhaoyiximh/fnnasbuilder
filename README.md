@@ -70,7 +70,7 @@ FnNAS Builder App 的目标是提供一个可重复、可诊断的 macOS 构建�
 6. 选择输出目录，点击“开始构建”；
 7. 在日志区域观察构建过程，完成后在“构建产物”中查看或在 Finder 中显示输出文件。
 
-> 当前源码脚本使用 ad-hoc 签名进行本地构建。正式对外发布时，建议使用 Developer ID Application 签名并完成 Apple notarization，否则 Gatekeeper 可能提示应用未验证。
+
 
 ## 从源码构建 App 和 DMG
 
